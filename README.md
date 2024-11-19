@@ -49,3 +49,20 @@ python3 manage.py migrate
 ```shell
 python3 manage.py runserver 0.0.0.0:8000
 ```
+
+<h3>How to start this app</h3>
+
+You need to clone this repository
+
+Also you need git, docker, docker-compose
+
+Open your cmd and write
+
+```shell
+docker-compose up --build
+```
+To stop app
+
+```shell
+docker-compose down
+```
