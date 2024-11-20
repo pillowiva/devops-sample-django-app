@@ -7,60 +7,34 @@
 
 Sample Python application on Django with PostgreSQL database.
 
-<h3>Requirements</h3>
-
-____
-
-
-- django 4.0.1
-- Pillow 9.0.0
-- psycopg2-binary 2.9.3
-- django-prometheus 2.2.0
-
-<h3>Deployment</h3>
-
-____
-
-
-
-- install Python 3.8
-- install libs 
-```shell
-      pip3 install -r requirements.txt
-```
-
-* Set environment export for variables:
-```yaml
-      DJANGO_DB_HOST: db
-      DJANGO_DB_NAME: app
-      DJANGO_DB_USER: worker
-      DJANGO_DB_PASS: worker
-      DJANGO_DB_PORT: "5432"
-      DJANGO_DEBUG: "False"
-```
-
-
-* migrate database:
-```shell
-python3 manage.py migrate
-```
-
-* start application:
-```shell
-python3 manage.py runserver 0.0.0.0:8000
-```
-
 <h3>How to start this app</h3>
 
-You need to clone this repository
+You need git, docker, docker-compose
 
-Also you need git, docker, docker-compose
+Clone this repository
 
-Open your cmd and write
+```shell
+git clone https://github.com/pillowiva/devops-sample-django-app
+```
+
+Go to the directory 
+
+```shell
+cd devops-sample-django-app
+```
+
+
+Open your bash and write
 
 ```shell
 docker-compose up --build
 ```
+
+Then go to 
+
+http://localhost:8001/
+
+
 To stop app
 
 ```shell
